@@ -1,0 +1,339 @@
+﻿/* Identity Card */
+
+/*
+Designed by : DeltaClic
+URL : www.deltaclic.com
+Copyright (c) 2012 DeltaClic.Com
+*/
+
+/*/////////////////////////*/
+/* الإعدادات الأساسية للقالب */
+/*/////////////////////////*/
+
+body {
+		background:url(../imgs/bg.jpg) center top no-repeat;
+		background-attachment:fixed;
+		padding: 0; 
+		margin: 0;
+		direction:rtl;
+}
+
+p {
+		font-family:Tahoma, Arial, sans-serif;
+		font-weight:normal;
+		font-size:12px;
+		line-height: 22px;
+		margin-bottom:15px;
+}
+
+h2 {
+		margin:0px 0px 10px 0px;
+		font-family:Times New Roman, Arial, sans-serif;
+		color: blue;
+		font-size:20px;
+		line-height: 22px;
+		text-decoration:underline;
+}
+
+a:link, a:active, a:visited {
+		color:#e10202;
+		text-decoration:none;
+}
+
+.clear {clear: both;}
+
+#wrap {
+		width:470px;
+		margin: 0 auto;
+		padding-top:20px;
+}
+
+/*//////////////*/
+/* تنسيق الهيدر */
+/*//////////////*/
+
+#header {
+		background:url(../imgs/bg_header.png) no-repeat;
+		padding:20px 25px 20px 25px;
+		width:420px;
+		height:77px;
+		margin-bottom:0px;
+}
+
+#avatar {
+		background:#F5F5F5;
+		border:1px solid #c1c1c1;
+		height:72px;
+		width:72px;
+		float:right;
+		padding:7px;
+		display:inline;
+		margin:0px;
+}
+
+#avatar img {
+		border:1px solid #c1c1c1;
+}
+
+#title {
+		float:right;
+		width:250px;
+		margin-right:20px;
+		padding:10px 0px;
+		display:inline;
+}
+
+#title h1 {
+		margin:10px 0px 0px 0px;
+		font-family:Times New Roman, Arial, sans-serif;
+		font-size:32px;
+		line-height: 22px;
+		color:#5B5B5B;
+		text-shadow:1px 1px 1px white;
+}
+	
+#title h3 {
+		margin:0px;
+		font-family:Times New Roman, Arial, sans-serif;
+		font-size:16px;
+		line-height:14px;
+		color:#111;
+		text-decoration:underline;
+}
+
+/*///////////////*/
+/* تنسيق القائمة */
+/*///////////////*/
+
+ul.navigation {
+		background:url(../imgs/navi.png) no-repeat;
+		position:absolute;
+		margin-top:0px;
+		width:441px;	
+		padding:8px 15px;
+		height:43px;
+}
+
+ul.navigation li {
+		float:right;
+		display:inline;  
+		margin:2px 14px;
+}
+
+ul.navigation li a:link, ul.navigation li a:active, ul.navigation li a:hover, ul.navigation li a:visited {
+		text-decoration: none;
+		color: #fff;
+		font-family:Tahoma, Arial, sans-serif;
+		font-weight:bold;
+		font-size:13px;
+		text-transform:uppercase;
+		height:34px;
+}
+
+/*//////////////////////////////*/
+/* تنسيق المحتوى + صفحة التعريف */
+/*//////////////////////////////*/
+
+#content {
+		padding: 20px 10px;
+}
+
+#content .panels {
+		background:url(../imgs/bg_content.png) repeat-y;
+		width:470px;
+		overflow: hidden;
+		margin:0;
+		margin-top:35px;
+}
+
+#content .panelsInner {
+		overflow: hidden;
+		zoom:1;
+}
+
+#content .panel {
+		padding:20px;
+}
+
+.content {
+		background:#FFF;
+		border:1px solid #c1c1c1;
+		padding:15px;
+		-moz-border-radius:10px;
+		-webkit-border-radius:10px;
+}
+
+.content ul {
+		list-style-image:url(../imgs/bullet.png);
+		font-family:Tahoma, Arial, sans-serif;
+		font-weight:normal;
+		font-size:12px;
+		margin:15px 45px 15px 0px;
+}
+
+.content ul li {
+		margin-bottom:10px;
+}
+
+.no-padding {
+		padding:0px;
+		border:1px solid #dddddd;
+		-moz-border-radius:10px;
+		-webkit-border-radius:10px;
+}
+
+/*//////////////////////////////*/
+/* تنسيق صفحة المواقع الاجتماعية */
+/*//////////////////////////////*/
+
+ul#networks {
+		list-style-image:none;
+		margin:0px;
+}
+
+ul#networks li {
+		background:#fff;
+		font-family:Tahoma, Arial, sans-serif;
+		font-size:11px;
+		width:398px;
+		height:48px;
+		margin:0px;
+		padding:11px 15px;
+		border-top:1px solid #ddd;
+		border-right:1px solid #ddd;
+		border-left:1px solid #ddd;
+}
+
+ul#networks li:hover {
+	background-color:#eee;
+}
+
+ul#networks li a:link, ul#networks li a:active, ul#networks li a:visited {
+		text-decoration:none;
+		color:#656565;
+}
+
+ul#networks li a:hover {
+		text-decoration:none;
+		color:#e10202;
+}
+
+ul#networks li span {
+		font-weight:bold;
+		font-size:14px;
+		line-height:26px;
+}
+
+ul#networks li.first {
+		-moz-border-radius-topleft:10px;
+		-webkit-border-top-left-radius:10px;
+		-moz-border-radius-topright:10px;
+		-webkit-border-top-right-radius:10px;
+		border-top:1px solid #dddddd;
+		border-right:1px solid #dddddd;
+		border-left:1px solid #dddddd;
+}
+
+ul#networks li.last {
+		-moz-border-radius-bottomleft:10px;
+		-webkit-border-bottom-left-radius:10px;
+		-moz-border-radius-bottomright:10px;
+		-webkit-border-bottom-right-radius:10px;
+		border-bottom:1px solid #dddddd;
+}
+
+ul#networks li div.icon {
+		width:48px;
+		height:48px;
+		float:right;
+		display:inline;
+}
+
+ul#networks li div.network {
+		width:330px;
+		height:48px;
+		float:right;
+		margin-right:20px;
+		display:inline;
+}
+	
+/*///////////////////*/
+/* تنسيق صفحة أعمالي */
+/*///////////////////*/	
+	
+ul#works {
+		list-style-image:none;
+		margin:15px 0px;
+}
+
+ul#works li {
+		display:inline;
+}
+
+ul#works li img {
+		margin:8px;
+		box-shadow: 1px 1px 12px #000;
+		height:80px;
+		width:80px;	
+}
+
+/*/////////////////////*/
+/* تنسيق صفحة اتصل بنا */
+/*/////////////////////*/
+
+#contactus {
+		margin:0px;
+}
+
+#contactus li {
+		background:#FFF;
+		border-top: 1px solid #ccc;
+		font-family:Tahoma, Arial, sans-serif;
+		font-weight:normal;
+		font-size:12px;
+		height:24px;
+		padding:7px;
+		vertical-align:top;
+		margin:0px;
+		list-style-image:none;
+}
+
+#contactus li img {
+		vertical-align:middle;
+}
+
+#contactus li span {
+		vertical-align:middle;
+}
+
+#contactus li:hover:before {
+		content:url(../imgs/spc.png);
+}
+
+#contactus li span a:link, #contactus li a:active, #contactus li a:visited {
+		color:#000;
+		text-decoration:none;
+}
+
+#contactus li span a:hover {
+		color:#e10202;
+}
+
+/*//////////////*/
+/* تنسيق الفوتر */
+/*//////////////*/
+
+#footer {
+		background:url(../imgs/bg_footer.png);
+		width:470px;
+		height:25px;
+}
+
+#copyright {
+		font-family:Tahoma, Arial, sans-serif;
+		font-weight:normal;
+		font-size:11px;
+		text-align:center;
+		width:470px;
+		color:#545454;
+}
